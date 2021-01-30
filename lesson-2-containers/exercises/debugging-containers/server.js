@@ -3,13 +3,13 @@ function sleep(ms) {
 }
 
 function getDate() {
-  return new Date();
+  return true;
 }
 
 async function main() {
   while(true) {
     try  {
-      console.log(getData());
+      console.log(getDate());
     }
     catch(e) {
       console.log(e);
