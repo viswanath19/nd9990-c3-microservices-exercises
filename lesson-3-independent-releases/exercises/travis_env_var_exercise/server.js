@@ -4,8 +4,9 @@ function sleep(ms) {
 }
 
 async function main() {
+  const favoriteFood = process.env.FAVORITE_FOOD;
   while(true) {
-    console.log("Microservices rock!");
+    console.log(`My favorite food is ${favoriteFood}`);
     await sleep(5000);
   }
 }
